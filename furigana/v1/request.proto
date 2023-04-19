@@ -4,6 +4,8 @@ package proto.furigana.v1;
 
 message FuriganaServiceConvertRequest {
   string body = 1;
+  string to = 2;      // hiragana katakana romaji
+  string mode = 3;    // normal spaced okurigana furigana
 }
 
 message FuriganaServiceConvertResponse {
