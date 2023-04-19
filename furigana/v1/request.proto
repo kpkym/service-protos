@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto.furigana.v1;
+
+message FuriganaServiceConvertRequest {
+  string body = 1;
+}
+
+message FuriganaServiceConvertResponse {
+  string body = 1;
+}
+
+service FuriganaService {
+  rpc Convert(FuriganaServiceConvertRequest) returns (FuriganaServiceConvertResponse) {}
+}
